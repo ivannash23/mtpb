@@ -42,4 +42,4 @@ rails s
 
   * HTML
   * Ruby v. 2.3.3
-  * Rails v. 5.0.2
+  * Rails v. 5.2.2

@@ -1,25 +1,45 @@
-# README
+# MTPB: My Trip Plan Builder
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+MTPB is a web app to create and edit traveler trip plans.
 
-Things you may want to cover:
 
-* Ruby version
+### Getting Started
 
-* System dependencies
+These instructions will get the project up and running on your local machine for development and testing purposes.
 
-* Configuration
+Clone this repository.
 
-* Database creation
+```
+git clone https://github.com/ivannash23/mtpb.git
+```
 
-* Database initialization
+Bundle install.
 
-* How to run the test suite
+```
+bundle install
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Create a local database.
 
-* Deployment instructions
+```
+rails db:create
+```
 
-* ...
-# mtpb
+Migrate models.
+
+```
+rails db:migrate
+```
+
+
+Run rails server.
+
+```
+rails s
+```
+
+### Built with:
+
+  * HTML
+  * Ruby v. 2.3.3
+  * Rails v. 5.0.2

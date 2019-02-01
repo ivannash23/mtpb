@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<h1>My Trip Plans</h1>
+
+<div>
+  <% @trip_plans.each do |trip_plan| %>
+  <div>
+    <h2><%= link_to trip_plan.title.capitalize, trip_plan %></h2>
+    <p><%= truncate(trip_plan.summary.capitalize, length: 50) %></p>
+    <button><%= link_to 'Edit', edit_trip_plan_path(trip_plan) %></button>
+    <button>
+      <%= link_to 'Remove', trip_plan, method: :delete, data: { confirm: 'Are
+      you sure?' } %>
+    </button>
+  </div>
+  <hr>
+  <% end %>
+</div>
+
+
+<button><%= link_to 'New Trip Plan', new_trip_plan_path %></button>

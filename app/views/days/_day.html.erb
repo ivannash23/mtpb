@@ -1,0 +1,18 @@
+<div>
+  <div style="border-left: 6px solid black; background-color: lightgrey;">
+    <p>
+      <strong>Day <%= day.position %>: <%= day.title %></strong>
+    </p>
+    <p>
+      <%= day.description %>
+    </p>
+    <p>
+      <em><%= time_ago_in_words(day.created_at) %> Ago</em>
+    </p>
+    
+    <button>
+      <%= link_to 'Remove', [day.trip_plan, day], method: :delete, data: { confirm: 'Are you sure you want to delete this day?'} %>
+    </button>
+    <br>
+  </div>
+</div>
